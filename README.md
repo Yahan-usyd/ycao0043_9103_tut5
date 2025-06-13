@@ -59,10 +59,13 @@ I selected **Perlin noise as the primary animation driver** with time-based prog
 ### 1. **Dynamic Transparency Breathing Effect**
 - **Inspiration:** [OpenProcessing Sketch - My Sketch by ngsm](https://openprocessing.org/sketch/2384491)
 - **Influence:** The color gradient effects in this project inspired me to implement dynamic transparency changes. I combined this concept with Perlin noise to create breathing-like transparency animations that give the artwork a living, organic feel.
+- ![An image of the Mona Lisa](readmeImages/transparency.png)
 
 ### 2. **Dynamic City Roads Concept**
 - **Inspiration:** [OpenProcessing Sketch - Mood_05_2 by Dru ](https://openprocessing.org/sketch/2246206)
 - **Influence:** The dynamic line transformations in this project inspired me to create animated city roads in the top-right zone. The horizontal and vertical lines represent dynamic roads, symbolizing the vibrant, concrete life of a city in motion.
+- ![An image of the Mona Lisa](readmeImages/lines.png)
+
 
 ## Technical Explanation
 
@@ -133,7 +136,7 @@ function easeAnimation(t) {
 
 ## External Tools and Techniques
 
-### 1. **Microsoft Copilot AI Assistant**
+### **Microsoft Copilot AI Assistant**
 - **Application:** I use Microsoft Copilot to help organize the lines group system for better horizontal and vertical line detection in the top-right zone.
 - **The prompts is:** "I want to use the method of 'if the x1 and x2 coordinates are almost the same (the difference is less than 1), it means this is a vertical line' to distinguish the horizontal and vertical line animations in the three const groups. How can I modify the code without adjusting the const array?"
 - **And the reply is:** Copilot suggested creating a combined array with spread operators and adding weight properties, then using coordinate comparison to detect line orientation and apply different entrance animations accordingly. 
